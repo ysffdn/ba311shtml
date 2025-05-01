@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 4: IT Infrastructure & Emerging Technologies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .content-reveal {
+            transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+        .content-reveal.show {
+            max-height: 500px;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-gradient-to-r from-indigo-600 to-purple-700 text-white p-6 shadow-md">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold text-center">IT Infrastructure & Emerging Technologies</h1>
+            <p class="text-center text-indigo-200 mt-2">BA 311 - Group 4 Presentation | Focus on AI Adoption Trends</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section id="introduction" class="mb-12 bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-semibold mb-4 text-indigo-700">The Evolving Landscape of Business Technology</h2>
+            <p class="mb-4">
+                A durable <strong class="font-semibold">IT Infrastructure</strong> forms the backbone of modern enterprise operations. However, the landscape is rapidly evolving, driven by powerful <strong class="font-semibold">Emerging Technologies</strong>. Our research, drawing significantly from studies like the AI Adoption Reports and Technological analysis, explores this dynamic interplay.
+            </p>
+            <p>
+                Technologies such as Artificial Intelligence (AI), advanced data analytics, and cloud platforms are no longer niche concepts but are becoming integral to business strategy, efficiency, and competitiveness. This presentation examines key trends, adoption patterns, and the necessary infrastructural considerations for utilizing these transformative technologies.
+            </p>
+        </section>
+
+        <section id="showcase" class="mb-12 bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-semibold mb-6 text-indigo-700">Highlights on AI Adoption & Infrastructure</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                <div>
+                    <h3 class="text-xl font-semibold mb-3">Visualizing Technological Trends for Business</h3>
+                    <img src="https://storage.googleapis.com/techsauce-prod/ugc/uploads/2021/11/2022-top-technology-trends.png"
+                         alt="Chart representing AI adoption trends in business"
+                         class="rounded-lg shadow-md w-full h-auto object-cover">
+                    <p class="text-sm text-gray-600 mt-2 italic">Businesses are increasingly exploring with the help of AI technologies and tech trends.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-3">AI Adoption and Tech Trends</h3>
+                    <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-md bg-gray-300 flex items-center justify-center">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/yM9sUZLAFhI?si=sxou6ZylXDmaGmH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <p class="text-sm text-gray-600 mt-2 italic">Video discussing AI strategy and technological trends in business.</p>
+                </div>
+            </div>
+
+            <div class="mt-10 pt-6 border-t border-gray-200">
+                <h3 class="text-xl font-semibold mb-4">Interactive Insight: AI Adoption Trends</h3>
+                <p class="mb-4">Artificial Intelligence is a key emerging technology impacting businesses globally. Click the button below to learn more about recent adoption trends based on the PwC study.</p>
+                <button id="revealButton" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105">
+                    Learn More About AI Trends
+                </button>
+
+                <div id="aiTrendsContent" class="content-reveal mt-6 p-4 bg-gray-50 border border-gray-200 rounded-lg">
+                    <h4 class="text-lg font-semibold mb-2">Key AI Adoption Insights (PwC 2023 Study):</h4>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li>Globally, around 35% of companies reported actively using AI, with another 42% exploring its potential.</li>
+                        <li>Key drivers for AI adoption include increasing accessibility, potential for cost reduction, and rising competitive pressure.</li>
+                        <li>Significant barriers remain, including limited AI skills/expertise (cited by 34%), high implementation costs (29%), and the complexity of data and integration (24-25%).</li>
+                        <li>The Generative AI market showed rapid growth potential, estimated at $8B in 2022.</li>
+                        <li>Future adoption growth areas include Synthetic Data generation, Data-centric AI approaches, and Edge AI deployments.</li>
+                    </ul>
+                    <p class="text-sm text-gray-500 mt-3 italic">Note: Data sourced from PwC "AI Adoption in the Business World" report, April 2023.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-semibold mb-6 text-center text-indigo-700">Meet the Team - Group 4</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="text-center p-4 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow duration-300">
+                    <img src="https://placehold.co/100x100/94a3b8/ffffff?text=Member+1"
+                         alt="Profile picture of Group Member 1"
+                         class="w-24 h-24 rounded-full mx-auto mb-4 shadow">
+                    <h3 class="text-lg font-semibold">Metehan Zambak</h3>
+                    <p class="text-indigo-600 font-medium mb-2">Role: Lead Researcher</p>
+                    <p class="text-sm text-gray-600">Focused on analyzing industrial reports and academic sources on AI adaption and tech infrustructure implications. Indicating which sources are appropriate for presentation and analyzing the informations then arranging the slides.</p>
+                </div>
+                <div class="text-center p-4 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow duration-300">
+                    <img src="https://placehold.co/100x100/94a3b8/ffffff?text=Member+2"
+                         alt="Profile picture of Group Member 2"
+                         class="w-24 h-24 rounded-full mx-auto mb-4 shadow">
+                    <h3 class="text-lg font-semibold">Ece İlayda Demirtürk</h3>
+                    <p class="text-indigo-600 font-medium mb-2">Role: Data Analyst</p>
+                    <p class="text-sm text-gray-600">Responsible from analyzing data sheets and performing graphical analysis using Google Sheets/Excel. Improved presentations visualisation part with Canva program. Allocated industrial and academical reports to use in project.</p>
+                </div>
+                <div class="text-center p-4 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow duration-300">
+                    <img src="https://placehold.co/100x100/94a3b8/ffffff?text=Member+3"
+                         alt="Profile picture of Group Member 3"
+                         class="w-24 h-24 rounded-full mx-auto mb-4 shadow">
+                    <h3 class="text-lg font-semibold">Yusuf Fidan</h3>
+                    <p class="text-indigo-600 font-medium mb-2">Role: Web Developer</p>
+                    <p class="text-sm text-gray-600">Developed this interactive webpage (coding, debugging, visual design, source research for webpage) and helped preparing presentation materials and produced excel files to analyze.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 text-center p-4 mt-12">
+        <p>© 2025 BA 311 - Group 4. Izmir University of Economics.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const revealButton = document.getElementById('revealButton');
+            const aiTrendsContent = document.getElementById('aiTrendsContent');
+            
+            if (revealButton && aiTrendsContent) {
+                revealButton.addEventListener('click', function() {
+                    aiTrendsContent.classList.toggle('show');
+                    
+                    if (aiTrendsContent.classList.contains('show')) {
+                        revealButton.textContent = 'Hide AI Trends';
+                    } else {
+                        revealButton.textContent = 'Learn More About AI Trends';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
